@@ -1,4 +1,19 @@
-	import java.awt.FlowLayout;
+import java.util.Random; 
+
+public class Coin { 
+static int rand1 = new Random().nextInt(2); 
+public static string flip(){
+if (rand1 == 0)  {
+}
+ return "Heads"; 
+}
+else if (rand1 == 1) {
+ 
+ return "Tails"; 
+ }
+ }
+
+import java.awt.FlowLayout;
 	import java.awt.event.ActionEvent;
 	import java.awt.event.ActionListener;
 	import javax.swing.Icon;
@@ -31,11 +46,10 @@ public class TestInterface {
 	    button.addActionListener(new ActionListener( ) {
 	      public void actionPerformed(ActionEvent ae) {
 
-	          label.setText("FUCK YOU");
+	          label.setText(Coin.flip());
 
 	      }  
 	    }); 
-
 	    setLayout(new FlowLayout( ));
 	    add(button);
 	    add(label);
